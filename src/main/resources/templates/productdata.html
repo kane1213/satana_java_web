@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head lang="en">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+	<script th:inline="javascript">
+	 
+	</script>
+	<script th:src="@{/assets/js/main.js}"></script>
+	</head>
+	<body>
+	    <div id="product-single" class='container'>
+	    	<input type="text"  v-model="question" />
+	    	<div class="data">
+	    		<div>name: {{ name }}</div>
+    			<div>detail: {{ detail }}</div>
+    			<div>price: {{ price }}</div>
+	    	</div>
+	    	<div>{{ status }}</div>
+	    </div>
+	</body>
+</html>
